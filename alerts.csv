@@ -1,0 +1,4 @@
+customer_name,customer_number,reporting_date,date_of_alert,category,rule_desc,rule_code
+YESGT TRAVELS INDIA PRIVATE LIMITED,7805058,27-11-2022,current_date,"{'high': 'under_insurance_percentage < 70', 'medium': '70 <= under_insurance_percentage < 80', 'low': '80 <= under_insurance_percentage < 90'}",Underinsured inventory,signal_2
+SHRE LAKSHMEE ENTERPRISES,4194626,27-11-2022,current_date,"{'high': 'under_insurance_percentage < 70', 'medium': '70 <= under_insurance_percentage < 80', 'low': '80 <= under_insurance_percentage < 90'}",Underinsured inventory,signal_2
+MANAPPURAM JEWELLERS LIMITED,7431358,27-11-2022,current_date,"{'high': 'under_insurance_percentage < 70', 'medium': '70 <= under_insurance_percentage < 80', 'low': '80 <= under_insurance_percentage < 90'}",Underinsured inventory,signal_2

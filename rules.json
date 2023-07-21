@@ -1,0 +1,28 @@
+{
+    "signal_1": {
+        "rule": "Overinsured inventory",
+        "class": "signal_1",
+        "conditions": "insurance_entry['amount_of_insurance'] > insurance_entry['value_of_security'] and insurance_entry['expiry_date'] > insurance_entry['reporting_date']",
+        "calculate": {
+            "insurance_percentage": "insurance_entry['amount_of_insurance'] / insurance_entry['value_of_security'] * 100"
+        },
+        "category": {
+            "high": "over_insurance_percentage > 150",
+            "medium": "120 < over_insurance_percentage <= 150",
+            "low": "110 < over_insurance_percentage <= 120"
+        }
+    },
+    "signal_2": {
+        "rule": "Underinsured inventory",
+        "class": "signal_2",
+        "conditions": "insurance_entry['amount_of_insurance'] < insurance_entry['value_of_security'] and insurance_entry['expiry_date'] > insurance_entry['reporting_date']",
+        "calculate": {
+            "insurance_percentage": "insurance_entry['amount_of_insurance'] / insurance_entry['value_of_security'] * 100"
+        },
+        "category": {
+            "high": "under_insurance_percentage < 70",
+            "medium": "70 <= under_insurance_percentage < 80",
+            "low": "80 <= under_insurance_percentage < 90"
+        }
+    }
+}
