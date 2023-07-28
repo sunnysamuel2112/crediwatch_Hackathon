@@ -4,8 +4,8 @@ from botocore.exceptions import ClientError
 # Set up S3 client
 s3 = boto3.client(
     's3',
-    aws_access_key_id='AKIAZOZJ4365NMV6WNUC',
-    aws_secret_access_key='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'
+    aws_access_key_id='',
+    aws_secret_access_key=''
 )
 
 # Specify the bucket name
